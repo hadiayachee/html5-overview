@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="section1">
+        <h3>HTML5 Overview</h3>
+    </div>
+    <button id="b1" disabled>What is HTML5?</button>
+    <br><br>
+    <div class="secion2">
+      HTML5 is an advanced version of HTML. It contains all the features of HTML along with new tags like &lt;video&gt;, &lt;audio&gt; and &lt;canvas&gt;.<br> There are also tags for including semantics, and these tags are &lt;article&gt;,&lt;header&gt;,&lt;footer&gt;  etc. <br>HTML5 improves the HTML to support the latest multimedia and new features, including graphics, music, etc.
+      <br>  This page will introduce you to :
+        <ul>
+            <li>basic structure of HTML5</li>
+            <li>some basic HTML5 tags</li>
+          </ul>
+            Note: if the web browser does not recognize any specific tags, formats, or settings, the browser will render the content based on its default styles.
+           
+    </div>
+    <br><br>
+    <button id="b1" disabled>Basic structure of HTML</button>
+    <br><br>
+    <div class="secion2">
+        &lt;!DOCTYPE html&gt;<br>
+
+        &lt;html&gt;<br>
+        &lt;head&gt;<br>
+        &lt;meta charset="UTF-8"&gt;<br>
+        &lt;title>HTML — overview &lt;/title &gt;<br>
+        &lt;!-- this is a comment: browser does not 
+        render the head element --&gt;<br>
+        &lt;/head&gt;<br>
+        &lt;body&gt;<br>
+       <div id="h"> &lt;article&gt;HTML5 &lt;/article&gt;<br> 
+        &lt;section&gt;It is advanced HTML &lt;/section&gt;<br></div> 
+        content .....<br>
+        &lt;!-- this is a comment: browser renders 
+        the content of the body element --&gt;<br>
+        &lt;/body&gt;<br>
+        &lt;/html&gt;<br>
+    </div>
+    <br><br>
+    <button id="b1" disabled>New HTML5 tags</button>
+    <br><br>
+    <div class="secion2">
+       
+        
+        <ul>
+            <li> &lt;article&gt;, &lt;aside&gt;, &lt;audio&gt; &lt;canvas&gt;,&lt;command&gt;, &lt;datalist&gt; </li>
+            <li>&lt;details&gt;,&lt;embed&gt;, &lt;figure&gt;</li>
+            
+            <li> &lt;footer&gt;,&lt;header&gt;,&lt;hgroup&gt;,&lt;keygen&gt; ,&lt;mark&gt;, ,&lt;meter&gt;,&lt;nav&gt; </li>
+            <li>  &lt;output&gt; &lt;progress&gt;,  &lt;ruby&gt; &lt;section&gt;,  &lt;time&gt; &lt;video&gt;... &lt;wbr&gt;...</li>
+            <li>input &lt;color&gt;,&lt;date&gt;,&lt;datetime-local&gt;,&lt;datetime&gt;,&lt;email&gt;,&lt;month&gt;,&lt;number&gt; ,&lt;range&gt; ,&lt;search&gt; ,&lt;time&gt;,&lt;tel&gt;,&lt;url&gt; </li>
+
+          </ul>
+    </div>
+   
+    <br><br>
+    <button id="b1" disabled>Input</button>
+    <br><br>
+    <button id="b2" disabled>Color</button>
+       
+        
+        <textarea id="t2">  
+          <label>Select your favorite color:</label>
+          <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+          </textarea><br><br>
+          <div class="secion3">
+           Select your favorite color:
+            <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+          </div>
+    
+       
+    <br><br>
+    <button id="b2" disabled>Date</button>
+       
+        
+        <textarea id="t2">  
+          <label for="birthday">Birthday:</label>
+          <input type="date" id="birthday" name="birthday">
+          </textarea><br><br>
+          <div class="secion3">
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday">
+          </div><br><br>
+          
+          <button id="b2" disabled>Datetime-local</button>
+             
+              
+              <textarea id="t2">  
+          <label for="birthdaytime">Birthday (date and time):</label>
+          <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+                </textarea><br><br>
+                <div class="secion3">
+                  <label>Birthday (date and time):</label>
+                  <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+                </div><br><br>
+
+
+                <button id="b2" disabled>Email</button>
+       
+        
+                <textarea id="t1">  
+                  <form action="/action_page.php">
+                    <label for="email">Enter your email:</label>
+                    <input type="email" id="email" name="email">
+                    <input type="submit">
+                  </form>
+                  </textarea><br><br>
+                  <div class="secion3">
+                    <form action="/action_page.php">
+                      <label for="email">Enter your email:</label>
+                      <input type="email" id="email" name="email">
+                      <input type="submit">
+                    </form>
+                  </div><br><br>
+
+
+
+                  <button id="b2" disabled>Month</button>
+       
+        
+                  <textarea id="t2">  
+                    <label for="bdaymonth">Birthday (month and year):</label>
+                    <input type="month" id="bdaymonth" name="bdaymonth">
+                    </textarea><br><br>
+                    <div class="secion3">
+                      <label for="bdaymonth">Birthday (month and year):</label>
+                      <input type="month" id="bdaymonth" name="bdaymonth">
+                    </div><br><br>
+
+
+
+                    <button id="b2" disabled>Number</button>
+       
+        
+                    <textarea id="t1">  
+                      <form action="/action_page.php">
+                        <label for="quantity">Quantity (between 1 and 5):</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="5">
+                        <input type="submit">
+                      </form>
+                      </textarea><br><br>
+                      <div class="secion3">
+                        <form action="/action_page.php">
+                          <label for="quantity">Quantity (between 1 and 5):</label>
+                          <input type="number" id="quantity" name="quantity" min="1" max="5">
+                          <input type="submit">
+                        </form>
+                      </div><br><br>
+
+                      
+
+
+                      <button id="b2" disabled>Range</button>
+       
+        
+                      <textarea id="t2">  
+                        <label for="vol">Volume (between 0 and 50):</label>
+                        <input type="range" id="vol" name="vol" min="0" max="50">
+                        </textarea><br><br>
+                        <div class="secion3">
+                          <label for="vol">Volume (between 0 and 50):</label>
+  <input type="range" id="vol" name="vol" min="0" max="50">
+                        </div><br><br>
+    
+
+
+
+
+
+
+
+
+
+
+                        <button id="b2" disabled>Search</button>
+       
+        
+                        <textarea id="t2">  
+                          Music search: <input type="search" name="musicsearch" placeholder="Song, author, album...">
+                          <input type="submit" value="Search">
+                          </textarea><br><br>
+                          <div class="secion3">
+                            Music search: <input type="search" name="musicsearch" placeholder="Song, author, album...">
+
+                            <input type="submit" value="Search">
+                          </div><br><br>
+    
+                          
+
+
+
+
+
+
+
+
+
+                          <button id="b2" disabled>Telephone</button>
+       
+        
+                          <textarea id="t1">  
+                            <form action="/action_page.php">
+                              <label for="phone">Enter a phone number:</label><br><br>
+                              <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+                              <small>Format: 123-45-678</small><br><br>
+                              <input type="submit">
+                            </form>
+                            </textarea><br><br>
+                            <div class="secion3">
+                              <form action="/action_page.php">
+                                <label for="phone">Enter a phone number:</label><br><br>
+                                <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+                                <small>Format: 123-45-678</small><br><br>
+                                <input type="submit">
+                              </form>
+                            </div><br><br>
+        
+
+
+
+                            <button id="b2" disabled>Time</button>
+       
+        
+                            <textarea id="t2">  
+                              <label for="appt">Select a time:</label>
+                              <input type="time" id="appt" name="appt">
+                              </textarea><br><br>
+                              <div class="secion3">
+                                <label for="appt">Select a time:</label>
+  <input type="time" id="appt" name="appt">
+                              </div><br><br>
+
+
+
+
+                              <button id="b2" disabled>Url</button>
+       
+        
+                              <textarea id="t1">  
+                                <form action="/action_page.php">
+                                  <label for="homepage">Add your homepage:</label>
+                                  <input type="url" id="homepage" name="homepage"><br><br>
+                                  <input type="submit">
+                                </form>
+                                
+                                </textarea><br><br>
+                                <div class="secion3">
+                                  <form action="/action_page.php">
+                                    <label for="homepage">Add your homepage:</label>
+                                    <input type="url" id="homepage" name="homepage"><br><br>
+                                    <input type="submit">
+                                  </form>
+                                  
+                                </div><br><br>
+
+
+
+                                <br><br>
+                                <button id="b1" disabled>Elements</button>
+                                <br><br>
+                                <button id="b2" disabled>Audio</button>
+                                   
+                                    
+                                    <textarea id="t1">  
+                                      <audio controls>
+                                        <source src="horse.ogg" type="audio/ogg">
+                                        <source src="horse.mp3" type="audio/mpeg">
+                                      Your browser does not support the audio element.
+                                      </audio>
+                                      </textarea><br><br>
+                                      <div class="secion3">
+                                        <audio controls>
+                                          <source src="horse.ogg" type="audio/ogg">
+                                          <source src="Horse-Angry-Neigh-And-Breathing-www.fesliyanstudios.com.mp3" type="audio/mpeg">
+                              
+                                        </audio>
+                                      </div>
+                                
+                                   
+                                <br><br>
+
+
+
+
+                                <button id="b2" disabled>Video</button>
+                                   
+                                    
+                                <textarea id="t1">  
+                                  <video width="400" controls>
+                                    <source src="mov_bbb.mp4" type="video/mp4">
+                                    <source src="mov_bbb.ogg" type="video/ogg">
+                                    Your browser does not support HTML video.
+                                  </video>
+                                  </textarea><br><br>
+                                  <div class="secion3">
+                                    <video width="400" controls>
+                                      <source src="mov_bbb.mp4" type="video/mp4">
+                                      <source src="mov_bbb.ogg" type="video/ogg">
+                                      Your browser does not support HTML video.
+                                    </video>
+                                  </div>
+                            
+                               
+                            <br><br>
+
+
+
+
+
+                            <button id="b2" disabled>Ruby</button>
+                                   
+                                    
+                            <textarea id="t1">  
+                              A ruby annotation is a small extra text, attached to the main text to indicate the 
+                              pronunciation or meaning of the corresponding characters.
+                              This kind of annotation is often used in Japanese publications.
+                              <ruby>
+                              漢 <rt> ㄏㄢˋ </rt>
+                              </ruby>
+                              </textarea><br><br>
+                              <div class="secion3">
+                              
+                                <ruby>
+                                 漢 <rt> ㄏㄢˋ </rt>
+                                </ruby>
+                              </div>
+                        
+                           
+                        <br><br>
+
+
+
+
+
+
+
+
+
+
+                        
+                        <button id="b2" disabled>Progress</button>
+                                   
+                                    
+                        <textarea id="t2">  
+                          <label for="file">Downloading progress:</label>
+                          <progress id="file" value="32" max="100"> 32% </progress>
+                          </textarea><br><br>
+                          <div class="secion3">
+                            <label for="file">Downloading progress:</label>
+<progress id="file" value="32" max="100"> 32% </progress>
+                          </div>
+                    
+                       
+                    <br><br>
+
+
+
+
+                    <button id="b2" disabled>Meter</button>
+                                   
+                                    
+                    <textarea id="t1">     
+                    <label for="disk_c">Disk usage C:</label>
+                    <meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter><br>
+                    <label for="disk_d">Disk usage D:</label>
+                    <meter id="disk_d" value="0.6">60%</meter>
+                      </textarea><br><br>
+                      <div class="secion3">
+                          
+                    <label for="disk_c">Disk usage C:</label>
+                    <meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter><br>
+                    
+                    <label for="disk_d">Disk usage D:</label>
+                    <meter id="disk_d" value="0.6">60%</meter>
+                    
+
+                      </div>
+                
+                   
+                <br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <button id="b2" disabled>Mark</button>
+                                   
+                                    
+                <textarea id="t2">  
+                  <p>Do not forget to buy <mark>milk</mark> today.</p>
+                  </textarea><br><br>
+                  <div class="secion3">
+                    <p>Do not forget to buy <mark>milk</mark> today.</p>
+                  </div>
+            
+               
+            <br><br>
+
+
+
+            <button id="b2" disabled>Keygen</button>
+                                   
+                                    
+            <textarea id="t1">  
+              The <keygen> tag specifies a key-pair generator field used for forms.
+              When the form is submitted, the private key is stored locally, and the public key is sent to the server.
+              <form action="demo_keygen.asp" method="get">
+               Username: <input type="text" name="usr_name">
+              Encryption: <keygen name="security">
+              <input type="submit">
+              </form>
+              </textarea><br><br>
+              <div class="secion3">
+                <form action="demo_keygen.asp" method="get">
+                  Username: <input type="text" name="usr_name">
+                 Encryption: <keygen name="security">
+                 <input type="submit">
+                 </form>
+              </div>
+        
+           
+        <br><br>
+
+
+
+
+
+
+
+
+        <button id="b2" disabled>Figure</button>
+                                   
+                                    
+        <textarea id="t1">  
+          <figure>
+            <img src="pic_trulli.jpg" alt="Trulli" style="width:100%">
+            <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+          </figure>
+          
+          </textarea><br><br>
+          <div class="secion3">
+            <figure>
+              <img src="pic_trulli.jpg" alt="Trulli" style="width:20%">
+              <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+            </figure>
+            
+          </div>
+    
+       
+    <br><br>
+
+
+    <button id="b2" disabled>Details</button>
+                                   
+                                    
+    <textarea id="t1">  
+      <details>
+        <summary>Epcot Center</summary>
+        <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions
+        award-winning fireworks and seasonal special events.</p>
+      </details>
+      </textarea><br><br>
+      <div class="secion3">
+        <details>
+          <summary>Epcot Center</summary>
+          <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+        </details>
+      </div>
+
+   
+<br><br>
+
+
+<button id="b2" disabled>Canvas</button>
+                                   
+                                    
+<textarea id="t1">  
+  <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+    Your browser does not support the HTML canvas tag.
+    </canvas>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+      Your browser does not support the HTML canvas tag.</canvas>
+      <script>
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      ctx.beginPath();
+      ctx.arc(95,50,40,0,2*Math.PI);
+      ctx.stroke();
+      </script> 
+  </textarea><br><br>
+  <div class="secion3">
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+      Your browser does not support the HTML canvas tag.
+      </canvas>
+      <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+        Your browser does not support the HTML canvas tag.</canvas>
+        
+        <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(95,50,40,0,2*Math.PI);
+        ctx.stroke();
+        </script> 
+  </div>
+
+
+<br><br>
+
+
+
+<button id="b2" disabled>Datalist</button>
+                                   
+                                    
+<textarea id="t1">  
+  
+<form action="/action_page.php" method="get">
+  <label for="browser">Choose your browser from the list:</label>
+  <input list="browsers" name="browser" id="browser">
+  <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <input type="submit">
+</form>
+  </textarea><br><br>
+  <div class="secion3">
+   
+<form action="/action_page.php" method="get">
+  <label for="browser">Choose your browser from the list:</label>
+  <input list="browsers" name="browser" id="browser">
+  <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <input type="submit">
+</form>
+  </div>
+
+
+<br><br>
+
+<button id="b2" disabled>Article</button>
+                                   
+                                    
+<textarea id="t1">  
+  
+  An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.
+  <article>
+    <h2>Google Chrome</h2>
+    <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+  </article>
+  
+  <article>
+    <h2>Mozilla Firefox</h2>
+    <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+  </article>
+  
+  <article>
+    <h2>Microsoft Edge</h2>
+    <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+  </article>
+  </textarea><br><br>
+  <div class="secion3">
+   
+    An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.
+    <article>
+      <h2>Google Chrome</h2>
+      <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+    </article>
+    
+    <article>
+      <h2>Mozilla Firefox</h2>
+      <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+    </article>
+    
+    <article>
+      <h2>Microsoft Edge</h2>
+      <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+    </article>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <br><br>
+
+
+  <button id="b2" disabled>Wbr</button>
+                                 
+                                  
+  <textarea id="t1">  
+    When a word is too long, the browser might break it at the wrong place. You can use the <wbr> element to add word break opportunities.
+  <p>This is a veryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryvery<wbr>longwordthatwillbreakatspecific
+  <wbr>placeswhenthebrowserwindowisresized.</p>
+
+    </textarea><br><br>
+    <div class="secion3">
+  <p>This is a veryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryvery<wbr>longwordthatwillbreakatspecific<wbr>placeswhenthebrowserwindowisresized.</p>
+
+    </div>
+    <br><br>
+
+    <button id="b1" disabled>HTML vs HTML5</button>
+                                 
+                         <br><br>         
+    
+                         <figure>
+                          <img src="t.png" alt="Trulli" style="width:30%">
+                         
+                        </figure>
+
+
+      <div class="secion3">
+        <button onclick="window.location.href = 'html1.html';"> HTML </button>
+        <button onclick="window.location.href = 'html5.html';"> HTML5 </button>
+      </div>
+      <br><br>
+  
+
+
+
+
+
+
+
+</body>
+</html>
